@@ -1,0 +1,41 @@
+a,
+.logo_header{
+    text-decoration: none;
+    padding-top: 0.315rem;
+    padding-bottom: 0.315rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    color: #fff;
+}
+
+.dropdown-content{
+    display: none;
+}
+
+ .dropbtn{
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #e9e8e8;
+    outline: none;
+    text-align: center;
+    text-transform: uppercase;
+    color:#6b6969;
+    border: 2px #b3b0b0 solid;
+}
+
+.dropbtn:hover{
+    background-color: #fff;
+    color:#646363;
+    border: 2px #696969 solid;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.dropbtn .user_name{
+  font-size: 1.3rem;
+  font-weight: 600;
+    text-transform: uppercase;
+}

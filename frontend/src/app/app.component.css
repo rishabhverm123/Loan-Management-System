@@ -1,0 +1,24 @@
+.header{
+    position: relative;
+    top:0;
+    width:100%;
+    background-color: var(--default);
+    height: 65px;
+    padding:0 0.5rem;
+    color:#fff;
+}
+
+.footer{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    background-color: var(--default);
+        padding: 10px 0;
+    font-size: 15px;
+    line-height: 5px;
+    text-align: center;
+    color:#fff;
+}
+/* .main_section{
+    margin-top:10px
+} */
