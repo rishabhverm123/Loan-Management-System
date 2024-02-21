@@ -18,7 +18,8 @@
     line-height: 5px;
     text-align: center;
     color:#fff;
+    z-index: 999;
 }
 .main_section{
-   position: relative;
+   height: calc(100vh - 130px);
 }
