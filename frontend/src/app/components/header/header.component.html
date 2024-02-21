@@ -1,10 +1,15 @@
 <nav class="navbar">
     <div class="container-fluid">
      
-      <a class="logo_header" href="#">
-     
-        Loan Management System
-      </a>
+      <div class="d-flex" style="gap:30px">
+        <div id="div_switch_sidebar" style="margin: auto; cursor: pointer;" class="container-sidebar-toggle d-none d-md-block" [ngClass]="state_side_bar?'change':''"  container="body">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            
+          </div>
+          <a class="logo_header" href="#">Loan Management System</a>
+        </div>
 
       <div class="dropdown">
         <button class="dropbtn"> 

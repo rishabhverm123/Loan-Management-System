@@ -39,3 +39,10 @@ a,
   font-weight: 600;
     text-transform: uppercase;
 }
+.container-sidebar-toggle .bar1, .container-sidebar-toggle .bar2, .container-sidebar-toggle .bar3 {
+    width: 30px;
+    height: 4px;
+    margin: 6px 0;
+    transition: 0.4s;
+    background-color: #fff;
+  }
