@@ -19,6 +19,6 @@
     text-align: center;
     color:#fff;
 }
-/* .main_section{
-    margin-top:10px
-} */
+.main_section{
+   position: relative;
+}

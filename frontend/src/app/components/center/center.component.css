@@ -1,0 +1,26 @@
+.sidebar {
+    position: fixed;
+    top: 65px;
+    left: 0;
+
+    width: 260px;
+    background: white;
+    z-index: 100;
+    transition: all 0.5s ease;
+  }
+
+  .home-section{
+    position: relative;
+    background-image: radial-gradient(
+        circle farthest-corner at 7.2% 13.6%,
+        rgba(37, 249, 245, 1) 0%,
+        rgba(8, 70, 218, 1) 90%
+    );
+    /* background-image: radial-gradient(circle farthest-corner at 7.2% 13.6%, #25f9f5 0%, #0846da 90%); */
+    height: 100%;
+    left: 260px;
+    width: calc(100% - 260px);
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+  }
