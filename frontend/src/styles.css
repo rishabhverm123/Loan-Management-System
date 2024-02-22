@@ -6,6 +6,10 @@
     font-family: 'Muli';
 }
 
+html, body{
+    height: 100%;
+}
+
 :root {
     --default: rgba(58,146,180,1);
     --dark: black;
