@@ -18,19 +18,19 @@ a,
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    border: none;
-    background-color: #e9e8e8;
+    background-color: #90d4e6;
     outline: none;
     text-align: center;
     text-transform: uppercase;
-    color:#6b6969;
-    border: 2px #b3b0b0 solid;
+    color:#2a6982;
+    border: 2px #2a6982 solid;
 }
 
 .dropbtn:hover{
-    background-color: #fff;
-    color:#646363;
-    border: 2px #696969 solid;
+    background-color: #90d4e6;
+    color:#2a6982;
+    border: 2px #2a6982 solid;
+    opacity: 0.7;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 

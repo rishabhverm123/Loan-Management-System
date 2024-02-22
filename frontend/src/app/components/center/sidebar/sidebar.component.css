@@ -1,0 +1,44 @@
+.sideNav{
+    list-style: none;
+    margin-top: 0px;
+}
+
+.sideNav li {
+
+    text-align: center;
+
+    padding: 0.75rem 0.6rem;
+    margin:0.7rem 0.7rem;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+    
+    
+}
+dl, ol, ul {
+    padding-left: 0rem !important;
+
+}
+.sideNav li a{
+    text-decoration: none;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 1.1rem;
+    color:black;
+    margin-left: 5px;
+}
+.sideNav li.active a,
+.sideNav li:hover a{
+    color:#fff
+}
+.sideNav li:hover,
+.sideNav li.active{
+    background-color: #2a6982;
+}
+
+.sideNav li a i{
+    font-size: larger;
+    margin-right: 10px;
+}

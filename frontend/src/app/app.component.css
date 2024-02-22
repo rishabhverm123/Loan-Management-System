@@ -12,7 +12,7 @@
     bottom: 0;
     position: absolute;
     width: 100%;
-    background-color: var(--default);
+    background-image: var(--default_gradient);
         padding: 10px 0;
     font-size: 15px;
     line-height: 5px;

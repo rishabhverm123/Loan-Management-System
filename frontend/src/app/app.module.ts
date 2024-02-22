@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CenterComponent } from './components/center/center.component';
+import { SidebarComponent } from './components/center/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    CenterComponent
+    CenterComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
