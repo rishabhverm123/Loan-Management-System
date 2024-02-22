@@ -18,7 +18,8 @@
     /* background-image: radial-gradient(circle farthest-corner at 7.2% 13.6%, #25f9f5 0%, #0846da 90%); */
     height: 100%;
     left: 220px;
-    width: calc(100% - 220px);
+
+    width: calc(100% - 230px);
     transition: all 0.5s ease;
     display: flex;
     flex-direction: column;
