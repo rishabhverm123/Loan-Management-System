@@ -11,7 +11,7 @@
     margin:0.7rem 0.7rem;
     border-radius: 15px;
     cursor: pointer;
-    transition: all 0.5s;
+    transition: all 0.5s ease;
     
     
 }
@@ -31,7 +31,8 @@ dl, ol, ul {
 }
 .sideNav li.active a,
 .sideNav li:hover a{
-    color:#fff
+    color:#fff;
+    font-weight: 600;
 }
 .sideNav li:hover,
 .sideNav li.active{
@@ -42,3 +43,24 @@ dl, ol, ul {
     font-size: larger;
     margin-right: 10px;
 }
+
+.side_bottom{
+    width: 95%;
+    height: 10%;
+    background: black;
+    color: #fff;
+    margin: auto;
+    border-radius: 15px;
+    padding: 0.5rem 0.5rem;
+}
+
+.side_bottom > span{
+    width: 100%;
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 1.4rem;
+    text-align: center;
+
+}
+
