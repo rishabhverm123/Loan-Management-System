@@ -19,6 +19,7 @@ dl, ol, ul {
     padding-left: 0rem !important;
 
 }
+
 .sideNav li a{
     text-decoration: none;
 
@@ -28,6 +29,7 @@ dl, ol, ul {
     font-size: 1.1rem;
     color:black;
     margin-left: 5px;
+    text-wrap: nowrap;
 }
 .sideNav li.active a,
 .sideNav li:hover a{
@@ -61,6 +63,6 @@ dl, ol, ul {
     font-weight: 600;
     line-height: 1.4rem;
     text-align: center;
-
+  
 }
 

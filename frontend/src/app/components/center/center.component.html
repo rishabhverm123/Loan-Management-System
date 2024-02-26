@@ -1,10 +1,10 @@
-<div class="sidebar">
+<div class="sidebar" [ngClass]="{'closed':sidebar_closed}">
     <app-sidebar></app-sidebar>
 </div>
 
 <div class="home-section">
     
-    <main>
+    <main class="h-100">
         <router-outlet #o="outlet"  name="outlet_right_body"></router-outlet>
       </main>
 </div>

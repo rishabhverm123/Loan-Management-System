@@ -12,6 +12,17 @@
     background: var(--default_gradient)
   }
 
+  .sidebar.closed{
+    width: 73px;
+    
+  }
+
+  .sidebar.closed ~ .home-section{
+    left:75px;
+    width: calc(100% - 75px);
+  }
+
+
   .home-section{
     position: relative;
 

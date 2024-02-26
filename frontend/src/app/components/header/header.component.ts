@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   state_side_bar:boolean=true;
+
+  @Input('child_data') set child_data({sidebar_state}:any) {
+
+    this.state_side_bar=sidebar_state;
+
+   
+}
+
+ToggleSidebar(){
+  this.state_side_bar=! this.state_side_bar;
+}
 }
