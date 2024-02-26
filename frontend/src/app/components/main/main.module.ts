@@ -6,6 +6,7 @@ import { HeaderComponent } from '../header/header.component';
 import { CenterComponent } from '../center/center.component';
 import { SidebarComponent } from '../center/sidebar/sidebar.component';
 import { MainComponent } from './main.component';
+import { SharedService } from 'src/app/services/shared.service';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { MainComponent } from './main.component';
     CommonModule,
     MainRoutingModule,
 
-  ]
+  ],
+  providers:[SharedService]
 })
 export class MainModule { }

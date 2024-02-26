@@ -2,7 +2,7 @@
     <div class="container-fluid">
      
       <div class="d-flex" style="gap:30px">
-        <div id="div_switch_sidebar" [ngClass]="{'closed':state_side_bar}" (click)="ToggleSidebar()" style="margin: auto; cursor: pointer;" class="container-sidebar-toggle d-none d-md-block"  container="body">
+        <div id="div_switch_sidebar" [ngClass]="{'closed':!state_side_bar}" (click)="ToggleSidebar()" style="margin: auto; cursor: pointer;" class="container-sidebar-toggle d-none d-md-block"  container="body">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
