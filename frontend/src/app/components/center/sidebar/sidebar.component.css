@@ -30,6 +30,7 @@ dl, ol, ul {
     color:black;
     margin-left: 5px;
     text-wrap: nowrap;
+    width: 100%;
 }
 .sideNav li.active a,
 .sideNav li:hover a{
