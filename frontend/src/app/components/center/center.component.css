@@ -9,7 +9,7 @@
     transition: all 0.5s ease;
     height: 100%;
     /* background: rgb(148,215,233); */
-    background: var(--default_gradient)
+    background: var(--default_gradient);
   }
 
   .sidebar.closed{

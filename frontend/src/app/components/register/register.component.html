@@ -1,0 +1,61 @@
+<section class="login background h-100">
+    <div class="panel_card">
+        <div class="card h100">
+            <div class="card-body">
+            <div class="logo-container" style="position: relative;">
+                <span style="position: absolute;
+                right: -10%;
+                font-size: xx-large;
+                color: midnightblue;
+                top: 50%;"><i class="fa fa-plus"></i></span>
+            </div>
+                <h4 class="my-3">Create Account</h4> 
+                <div class="form-container my-4" [formGroup]="registerForm">
+                    <div class="form-group" >
+                        <input type="text" formControlName="name" class="form-control" id="name">
+                        <label for="name"  class="form-label">Name</label>
+
+                        <div *ngIf="registerForm.get('name')?.invalid && (registerForm.get('name')?.dirty ||submitted|| registerForm.get('name')?.touched)">
+                            <span class="txt_err">Please provide a name.</span>
+                          </div>
+                      </div>
+
+                      <div class="form-group" >
+                        <input type="email" formControlName="email" class="form-control" id="email">
+                        <label for="name"  class="form-label">Email</label>
+
+                        <div *ngIf="registerForm.get('email')?.invalid && (registerForm.get('email')?.dirty || submitted|| registerForm.get('email')?.touched)">
+                            <span class="txt_err" *ngIf=" registerForm.get('email')?.errors['required']">Please provide a email.</span>
+                            <span class="txt_err" *ngIf=" registerForm.get('email')?.errors['email']">Please provide a valid email.</span>
+                          </div>
+                      </div>
+                      
+                      <div class="form-group">
+                        <input type="password" formControlName="password" class="form-control" id="password">
+                        <label for="password"  class="form-label">Password</label>
+                        <div *ngIf="registerForm.get('password')?.invalid && (registerForm.get('password')?.dirty ||submitted|| registerForm.get('password')?.touched)">
+                            <span class="txt_err" *ngIf=" registerForm.get('password')?.errors['required']">Please provide a password.</span>
+                            <span class="txt_err" *ngIf=" registerForm.get('password')?.errors['minlength']">Please provide a minimum 8 digit password.</span>
+                            <span class="txt_err" *ngIf=" registerForm.get('password')?.errors['maxlength']">Please provide a maximum 20 digit password.</span>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                        <input type="password" formControlName="c_password" class="form-control" id="c_password">
+                        <label for="c_password"  class="form-label">Confirm Password</label>
+                        <div *ngIf="registerForm.get('c_password')?.invalid && (registerForm.get('c_password')?.dirty ||submitted|| registerForm.get('c_password')?.touched)">
+                            <span class="txt_err">Please provide a password.</span>
+                          </div>
+                      </div>
+                      <div class="form-group-footer" routerLink="login">
+                            <h3 class="text-end">Already Have Account? Login</h3>
+                      </div>
+
+                      <div class="button-footer">
+                            <button class="w-100 my-2 btn btn-primary" (click)="signUp()">Sign Up</button>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

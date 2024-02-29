@@ -1,0 +1,43 @@
+<section class="login background h-100">
+    <div class="panel_card">
+        <div class="card">
+            <div class="card-body">
+            <div class="logo-container"></div>
+                <h4 class="my-3">Please Login</h4> 
+                <div class="form-container my-4" [formGroup]="loginForm">
+                    <div class="form-group" >
+                        <input type="text" formControlName="username" class="form-control" id="username">
+                        <label for="username"  class="form-label">Username</label>
+
+                        <div *ngIf="loginForm.get('username')?.invalid && (loginForm.get('username')?.dirty || loginForm.get('username')?.touched)">
+                            <span class="txt_err">Please provide a username.</span>
+                          </div>
+                      </div>
+                      
+                      <div class="form-group">
+                        <input type="password" formControlName="password" class="form-control" id="password">
+                        <label for="password"  class="form-label">Password</label>
+                        <div *ngIf="loginForm.get('password')?.invalid && (loginForm.get('password')?.dirty || loginForm.get('password')?.touched)">
+                            <span class="txt_err">Please provide a password.</span>
+                          </div>
+                      </div>
+                      <div class="form-group-footer">
+                        <div class="form-check">
+                            <input class="form-check-input" formControlName="rememberMe" type="checkbox" value="" id="check_remember">
+                            <label class="form-check-label" for="check_remember">
+                              Remember Me
+                            </label>
+                          </div>
+                            <h3>Forgot Password?</h3>
+                      </div>
+
+                      <div class="button-footer">
+                            <button class="w-100 my-2 btn btn-primary" (click)="login()">Login</button>
+                            <button class="w-100 my-2 btn btn-success" (click)="register()">Create New Account</button>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
