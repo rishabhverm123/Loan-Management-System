@@ -10,11 +10,13 @@ const roleRoute=require('./src/routes/role')
 require('./src/configs/db')
 const app=express();
 
+app.use(express.json());
+
 app.use(cors())
 
 app.use("/api/role",roleRoute);
  
-app.use(express.json());
+
 
 const port=process.env.PORT | 3000;
 
